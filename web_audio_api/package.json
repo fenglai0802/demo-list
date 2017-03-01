@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+        "puer": "^1.1.0"
+    },
+    "scripts": {
+        "start": "puer  -p 8888"
+    }
+}

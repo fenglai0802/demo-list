@@ -44,8 +44,7 @@ document.querySelector('.btn-group').onclick = function(event){
 
 
 // 创建音频上下文对象
-var AudioContext = window.AudioContext || window.webkitAudioContext;
-var audioCtx = new AudioContext();
+var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 // 创建音源节点
 var sourceNode = audioCtx.createBufferSource();
 // 加一个增益节点，用于控制音量
